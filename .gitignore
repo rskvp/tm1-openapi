@@ -1,0 +1,4 @@
+coverage
+examples/*.zip
+node_modules
+temp

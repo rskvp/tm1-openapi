@@ -1,0 +1,36 @@
+{
+  "name": "tm1-openapi",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": "20.3.0"
+  },
+  "files": [
+    "lib/*"
+  ],
+  "bin": {
+    "tm1-openapi": "lib/cli.js"
+  },
+  "main": "./lib/csdl2openapi.js",
+  "exports": "./lib/csdl2openapi.js",
+  "dependencies": {
+    "@discoveryjs/json-ext": "0.5.7",
+    "minimist": "1.2.8",
+    "odata-csdl": "0.8.1"
+  },
+  "devDependencies": {
+    "@apidevtools/openapi-schemas": "2.1.0",
+    "ajv": "8.12.0",
+    "ajv-draft-04": "1.0.0",
+    "ajv-formats": "2.1.1",
+    "c8": "8.0.0",
+    "eslint": "8.42.0",
+    "mocha": "10.2.0"
+  },
+  "scripts": {
+    "test": "c8 mocha",
+    "watch": "mocha --watch"
+  },
+  "author": "Pavel Rusakov",
+  "license": "MIT"
+}
